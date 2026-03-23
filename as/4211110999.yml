@@ -1,0 +1,20 @@
+name: infmatrix                 
+contact: 24270631@hdu.edu.cn
+
+ip:
+  - 172.16.23.0/24          
+
+domain:
+  inf.dn11:              # 你的域名
+    - ns1.inf.dn11       # 这个域名用的 NS
+  23.16.172.in-addr.arpa:   # 反向解析（PTR）
+    - ns1.inf.dn11
+
+ns:
+  ns1.inf.dn11: 172.16.23.233   # NS 对应的 IP
+
+monitor:
+  custom_node: |            # 可选（地图显示用）
+    "itemStyle": {
+        "color": "#005967"
+    }
